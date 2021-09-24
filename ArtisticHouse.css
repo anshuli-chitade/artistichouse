@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    
+}
+
+.Container{
+    width:100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), transparent), url(Images/4.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+
+/*NAVBAR*/
+
+.nav-link{
+    color: aliceblue;
+    margin: 5px 20px 0px 20px;
+    text-decoration: none;  
+}
+.nav-link::after{
+    content: "";
+    width:0%;
+    height: 2px;
+    background: #f16a60;
+    display: block;
+    margin: auto;
+}
+.logo{
+    font-family: 'Fleur De Leah', cursive;
+    font-size: 30px;
+    color: rgb(194, 212, 245);
+    text-decoration: underline rgb(140, 153, 252);
+}
+.brush{
+    font-size: 30px;
+    width: 100px;
+    color: rgb(140, 153, 252);
+}
+.nav-link:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+.text_box{
+    color: aliceblue;
+    position: absolute;
+    bottom: 8%;
+}
+.text_box h1{
+    font-size: 140px;
+    line-height: 160px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(241, 219, 219);
+    background: url(Images/3.jpg);
+    -webkit-background-clip: text;
+    background-position: 100px 400px;;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+.text_box h3{
+    font-size: 40px;
+    font-weight: 300;
+    font-family: 'Carattere', cursive;
+    color: rgb(217, 226, 241);
+}
+.btn{
+    border:solid 2px rgb(64, 64, 66);
+}
+@media(max-width:1000px){
+    .text_box{
+        color: aliceblue;
+        position: absolute;
+       
+    }
+    .text_box h1{
+        font-size: 100px;
+       /* line-height: 50px; */
+    background-position: 1000px 1000px;;
+    }
+    @keyframes back{
+        10%{
+            background-position: 3000px 0;
+        }
+    }
+    .text_box h3{
+        font-size: 15px;
+        font-weight: 200;
+    }
+
+}
+@media (max-width:780px) {
+    
+    .text_box h1{
+        font-size: 50px;
+       line-height: 50px;
+    }
+    .text_box h3{
+        font-size: 20px;
+        font-weight: 100;
+    }
+}
+
+
+/*SERVICES PROVIDED*/
+
+#services{
+    background-color: rgba(36,41,44,255) 
+}
+.row{   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+    color: rgba(249,173,163,255);
+    text-align: center;
+    padding: 30px 0 30px 0;
+    font-size: 50px;
+    font-family: 'Fleur De Leah', cursive;
+    text-decoration: underline;   
+}
+.card{
+    height: 400px;
+    background-color:rgb(203, 211, 238);
+    opacity: 0.8;
+}
+.card:hover{
+    box-shadow: beige;
+    opacity: 1;
+}
+.card-body{
+    color: rgba(32,46,55,255)
+}
+.card-title{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.card-text{
+    font-family: 'Carattere', cursive;
+    font-size: 30px;
+}
+@media (max-width:700px) {
+    .row{
+        flex-direction: column;
+    }  
+}
+
+
+/*PORTFOLIO SECTION*/
+
+.card2{
+    height: 250px;
+    width: 200px;
+}
+
+#portfolio{
+    background-color: rgba(36,41,44,255)   
+}
+.layer{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgb(35, 75, 121);
+    opacity: 0.7;
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 30px;
+    bottom: 0;
+    left: 1%;
+    transform: translateX(50);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*ABOUT SECTION*/
+
+#about{
+    background-color: rgba(36,41,44,255);
+    padding: 80px 0 80px 0;  
+}
+.about_head{
+    text-decoration: 1px underline;
+}
+ .second{
+    color: azure;
+} 
+.second p{
+    font-family: 'Carattere', cursive;
+    font-size: 30px;
+} 
+.photo{
+    width: 250px;
+    height: 385px;
+}
+
+/*CONTACT SECTION*/
+
+.con_head{
+    font-size: 30px;
+    font-family: 'Fleur De Leah', cursive;
+    color: rgba(181,230,235,255);
+    text-decoration: underline;
+    font-weight:200;
+}
+#contact{
+    color: azure;
+    background-color: rgb(87, 88, 88)
+}
+.footer{
+    font-size: 10px;
+    color: aliceblue;
+    text-align: center;
+}
